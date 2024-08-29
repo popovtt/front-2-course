@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авторизація</title>
+</head>
+<body>
+    <h1>Авторизація</h1>
+    <form action="/auth-form" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Введіть ваше ім'я" required><br><br>
+
+        <label for="password">Пароль:</label><br>
+        <input type="password" id="password" name="password" placeholder="Мінімум 8 символів" required minlength="8"><br><br>
+
+        <button type="submit">Увійти</button>
+        <button type="reset">Очистити</button>
+    </form><br>
+    
+    <p>Ще не зареєстровані? <a href="register.html">Реєстрація</a></p>
+    <p>Ще не заповнили анкету? <a href="survey.html">Заповніть анкету</a></p>
+</body>
+</html>

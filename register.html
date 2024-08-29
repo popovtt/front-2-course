@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Реєстрація</title>
+</head>
+<body>
+    <h1>Реєстрація</h1>
+    <form action="/register-form" method="post">
+        <label for="Name">Ім'я:</label><br>
+        <input type="text" id="name" name="name" placeholder="Введіть своє ім'я" required><br><br>
+
+        <label for="password">Пароль:</label><br>
+        <input type="password" id="password" name="password" placeholder="Мінімум 8 символів" required minlength="8"><br><br>
+
+        <label for="confirm_password">Повторіть пароль:</label><br>
+        <input type="password" id="confirm_password" name="confirm_password" placeholder="Повторіть пароль" required minlength="8"><br><br>
+
+        <fieldset>
+            <legend>Контактна інформація:</legend>
+            <label for="name">Ім'я*:</label>
+            <input type="text" id="name" name="name" placeholder="Введіть ваше ім'я"><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Введіть вашу пошту" required><br><br>
+
+            <label for="number">Номер телефону:</label>
+            <input type="text" id="number" name="number" placeholder="Введіть ваш номер" required><br><br>
+        </fieldset><br> 
+
+        <label>Виберіть гру / ігри:</label><br>
+        <input type="checkbox" id="football" name="features" value="feature1">
+        <label for="checkbox1">Футбол</label><br>
+        <input type="checkbox" id="basketball" name="features" value="feature2">
+        <label for="checkbox2">Баскетбол</label><br>
+        <input type="checkbox" id="volleyball" name="features" value="feature3">
+        <label for="checkbox3">Волейбол</label><br><br>
+
+        <label>Гендер:</label>
+        <input type="radio" id="male" name="choices" value="choice1">
+        <label for="choice1">Male</label>
+        <input type="radio" id="female" name="choices" value="choice2">
+        <label for="choice2">Female</label>
+        <input type="radio" id="screwdriver" name="choices" value="choice3">
+        <label for="choice3">Screwdriver</label><br><br>
+
+        <label>Виберіть ваш вік:</label>
+        <input type="number" id="number" name="number"><br><br>
+
+        <button type="submit">Зареєструватися</button>
+        <button type="reset">Очистити</button>
+    </form>
+    
+    <p>Вже зареєстровані? <a href="login.html">Увійдіть</a></p>
+    <p>Заповніть нашу <a href="survey.html">анкету</a>!</p>
+</body>
+</html>
